@@ -43,7 +43,7 @@ int64_t main() {
     int32_t eax3;
 
     rbp1 = reinterpret_cast<void*>(reinterpret_cast<int64_t>(__zero_stack_offset()) - 8);
-    fun_4004f0("Enter password : ");
+    fun_4004f0("nter password : ");
     rdx2 = stdin;
     fun_400500(reinterpret_cast<int64_t>(rbp1) - 32, 19, rdx2);
     eax3 = fun_400510(reinterpret_cast<int64_t>(rbp1) - 32, "hax0rs31337", rdx2);
@@ -55,3 +55,9 @@ int64_t main() {
     return 0;
 }
 ```
+
+## Requirements
+### - Python r2pipe module
+    $ sudo python -m pip install r2pipe
+### - Snowman nocode 
+Follow this [link](https://github.com/yegord/snowman/blob/master/doc/build.asciidoc) to build snowman. After build, move nocode binary (`./build/nocode/nocode`) to `/usr/local/bin/`
