@@ -4,7 +4,6 @@ import os
 import re
 import argparse
 import r2pipe
-from pprint import pprint
 
 class R2Snowman:
     def __init__(self, fn, nc="/usr/local/bin/nocode"):
